@@ -78,7 +78,7 @@ export default function Login({ navigation }) {
           <Text className="text-gray-400 text-md font-semibold">
             Don't have an account?{" "}
           </Text>
-          <TouchableOpacity onPress={() => navigation.navigate("Register")}>
+          <TouchableOpacity onPress={() => navigation.push("Register")}>
             <Text className="text-white text-[17px] font-bold">Register</Text>
           </TouchableOpacity>
         </View>

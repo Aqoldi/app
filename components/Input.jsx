@@ -18,7 +18,13 @@ export default function Input({
             error ? "border-rose-500" : "border-[#497991]"
           } focus:border-2  px-4 pl-10 focus:border-white h-11 rounded-xl text-lg`}
           placeholder={placeholder}
-          keyboardType={label == "Email" ? "email-address" : "default"}
+          keyboardType={
+            label == "Email"
+              ? "email-address"
+              : label == "Phone Number"
+              ? "phone-pad"
+              : "default"
+          }
           placeholderTextColor="white"
           secureTextEntry={secret}
           value={value}

@@ -11,6 +11,7 @@ export default function Register({ navigation }) {
   const [form, setForm] = useState({
     first_name: "",
     last_name: "",
+    phone_number: null,
     email: "",
     password: "",
   });
@@ -69,6 +70,14 @@ export default function Register({ navigation }) {
           value={form.last_name}
           onChangeText={(value) => handleInputChange("last_name", value)}
           error={errors.last_name}
+        />
+        <Input
+          label="Phone Number"
+          placeholder="Phone Number"
+          icon={icon.phone}
+          value={form.phone_number}
+          onChangeText={(value) => handleInputChange("phone_number", value)}
+          error={errors.phone_number}
         />
         <Input
           label="Email"

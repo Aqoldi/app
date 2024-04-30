@@ -27,7 +27,7 @@ export default function OnboardingScreen({ navigation }) {
 
   const Skip = ({ ...props }) => {
     return (
-      <TouchableOpacity {...props} onPress={() => navigation.navigate("Login")}>
+      <TouchableOpacity {...props} onPress={() => navigation.navigate("Tabs")}>
         <Text className="text-white rounded-full ml-5 px-3 py-2 text-lg font-bold">
           Skip
         </Text>
